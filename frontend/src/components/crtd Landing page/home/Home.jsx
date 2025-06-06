@@ -14,7 +14,7 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className='bg-white text-black w-[100vw] relative right-[10.7vw]'>
+    <div className='bg-white text-black  '>
 
       <div className='bg-white sticky top-0 z-50'>
         <Navbar />
