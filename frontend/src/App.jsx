@@ -11,6 +11,8 @@ import ConfirmPersonalDetails from './components/Eduaction/ConfirmPersonalDetail
 import CareerGuidance from './components/Career-Guidance/CareerGuidance'
 import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
 import AccountSettings from './components/AccountSetting/AccountSetting'
+import EducationalInfo from './components/Education/EducationInfo'
+
 
 import Job from './components/JobBoard/Job'
 
@@ -29,6 +31,7 @@ function App() {
         <Route path="/" element={< Home />} />
         <Route path="/fresherJobs" element={<FresherJobs />} />
 
+         
 
         {/* Student Pages */}
         <Route path="/personal-details" element={<PersonalDetails />} />
@@ -36,11 +39,14 @@ function App() {
        
         <Route path="/careerguidance" element={<CareerGuidance />} />
         <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
+          
+        <Route path="/educationinfo" element={<EducationalInfo />} />
         
         <Route path="/accountsetting" element={<AccountSettings />} />
 
         <Route path="/job-board" element={<Job />} />
         <Route path="/Popup" element={<Popup />} />
+
 
 
       </Routes>
