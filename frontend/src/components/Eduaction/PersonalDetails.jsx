@@ -49,7 +49,6 @@ const PersonalDetails = () => {
   return (
 
 
-    
      <div className="flex h-screen">
         <SideNavbar/>
     <div className="min-h-screen bg-gray-50 p-4">

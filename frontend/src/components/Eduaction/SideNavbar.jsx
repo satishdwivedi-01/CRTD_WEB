@@ -9,7 +9,6 @@ import {
   LogOut
 } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
-
 const SideNavbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
