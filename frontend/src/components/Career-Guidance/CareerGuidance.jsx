@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Clock, Calendar, X } from 'lucide-react';
-import CareerGuidanceNavbar from './CareerGuidanceSidenavbar';
+import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
 import { useNavigate } from 'react-router-dom';
 
 

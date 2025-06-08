@@ -8,6 +8,10 @@ import CareerGuidance from './components/Career-Guidance/CareerGuidance'
 import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
 import AccountSettings from './components/AccountSetting/AccountSetting'
 
+import Job from './components/Job Board/Job'
+
+import Popup from './components/Job Board/Popup'
+
 function App() {
 
   return (
@@ -21,6 +25,8 @@ function App() {
         <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
         <Route path="/accountsetting" element={<AccountSettings />} />
 
+        <Route path="/Job-Board" element={<Job />} />
+        <Route path="/Popup" element={<Popup />} />
 
       </Routes>
 
