@@ -30,7 +30,11 @@ const LAunchYourTech = () => {
       </div>
 
       {/* Job Cards */}
-    
+    <div className='card bg-white h-[200px] w-[400px]'>
+<h5>hh</h5>
+    </div>
+
+
     </div>
   );
 };
