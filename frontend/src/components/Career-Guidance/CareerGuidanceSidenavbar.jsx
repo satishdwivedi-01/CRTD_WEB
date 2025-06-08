@@ -62,11 +62,10 @@ const CareerGuidanceNavbar = () => {
               <li key={index}>
                 <button
                   onClick={() => navigate(item.route)}
-                  className={`w-full text-left font-semibold flex items-center space-x-3 px-3 py-3 rounded-lg transition-colors ${
-                    isActive
+                  className={`w-full text-left font-semibold flex items-center space-x-3 px-3 py-3 rounded-lg transition-colors ${isActive
                       ? 'bg-green-100 text-green-700 font-semibold border-l-4 border-green-600'
                       : 'text-gray-600 hover:bg-gray-50'
-                  }`}
+                    }`}
                 >
                   <item.icon size={20} />
                   <span>{item.label}</span>

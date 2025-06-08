@@ -7,7 +7,6 @@ import './App.css'
 
 import PersonalDetails from './components/Eduaction/PersonalDetails'
 import ConfirmPersonalDetails from './components/Eduaction/ConfirmPersonalDetails'
-import EditDetails from './components/Eduaction/EditDetails'
 
 import CareerGuidance from './components/Career-Guidance/CareerGuidance'
 import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
@@ -20,16 +19,20 @@ function App() {
     <>
 
       {/* Define Routes */}
+    
+      {/* Landing Pages */}
       <Routes>
         <Route path="/" element={< Home />} />
         <Route path="/fresherJobs" element={<FresherJobs />} />
 
-        <Route path="/person" element={<PersonalDetails />} />
-                   <Route path="//confirmprofile" element={<ConfirmPersonalDetails />} />
-                     <Route path="/editprofile" element={<EditDetails />} />
 
+        {/* Student Pages */}
+        <Route path="/personal-details" element={<PersonalDetails />} />
+        <Route path="/confirmprofile" element={<ConfirmPersonalDetails />} />
+       
         <Route path="/careerguidance" element={<CareerGuidance />} />
         <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
+        
         <Route path="/accountsetting" element={<AccountSettings />} />
 
 
