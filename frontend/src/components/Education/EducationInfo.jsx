@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AlertCircle, Upload } from 'lucide-react';
-import EducationSidenavbar from "../Education/EducationSidenavbar";
+import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
 
 const EducationalInfo = () => {
     const [resume, setResume] = useState(null);
@@ -18,7 +18,7 @@ const EducationalInfo = () => {
 
     return (
         <div className="flex h-screen">
-            <EducationSidenavbar />
+            <CareerGuidanceNavbar />
 
             <div className="bg-white rounded-lg w-[150vh] mt-4 ml-15 border border-gray-200 p-6">
 

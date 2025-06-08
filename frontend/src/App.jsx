@@ -5,8 +5,8 @@ import FresherJobs from './components/crtd Landing page/fresher Jobs/FresherJobs
 
 import './App.css'
 
-import PersonalDetails from './components/Eduaction/PersonalDetails'
-import ConfirmPersonalDetails from './components/Eduaction/ConfirmPersonalDetails'
+import PersonalDetails from './components/PersonalDetails/PersonalDetails'
+import ConfirmPersonalDetails from './components/PersonalDetails/ConfirmPersonalDetails'
 
 import CareerGuidance from './components/Career-Guidance/CareerGuidance'
 import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
@@ -40,7 +40,7 @@ function App() {
         <Route path="/careerguidance" element={<CareerGuidance />} />
         <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
           
-        <Route path="/educationinfo" element={<EducationalInfo />} />
+        <Route path="/educational-info" element={<EducationalInfo />} />
         
         <Route path="/accountsetting" element={<AccountSettings />} />
 
