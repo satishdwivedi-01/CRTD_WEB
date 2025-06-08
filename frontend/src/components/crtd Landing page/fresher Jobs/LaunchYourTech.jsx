@@ -1,4 +1,5 @@
 import React from 'react';
+import { Building2, Globe, Users, UserPlus } from "lucide-react";
 
 const LAunchYourTech = () => {
   return (
@@ -10,7 +11,7 @@ const LAunchYourTech = () => {
      
 
       <div className='flex justify-center pt-12 '>
-       <div className='bg-[#3e80ebf5] backdrop-blur-md  text-white text-xs font-semibold px-6 py-3 h rounded-[50px] shadow-sm'>
+       <div className='bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] backdrop-blur-md text-white text-xs font-semibold px-6 py-3 h rounded-[50px] shadow-sm'>
   #1 Fresher Hiring Platform
 </div>
 
@@ -18,24 +19,47 @@ const LAunchYourTech = () => {
 
     
       <div className='text-center mt-6 px-4'>
-        <h1 className='text-4xl md:text-5xl font-bold'>Launch Your Tech Career</h1>
-        <h1 className='text-4xl md:text-5xl font-bold mt-2'>3000+ Immediate Openings</h1>
+        <h1 className='text-3xl md:text-5xl font-bold'>Launch Your Tech Career</h1>
+        <h1 className='text-3xl md:text-5xl font-bold mt-2'>3000+ Immediate Openings</h1>
         <p className='text-sm md:text mt-4 text-blue-100'>
           Direct placement opportunities with top tech companies. No experience needed!
         </p>
       </div>
 
-   
-      <div className='flex flex-wrap justify-center gap-3 mt-4 px-4'>
-        <span className='text-[#FFFFFF] bg-[#3e80ebf5] px-4 py-2 text-sm rounded-full font-medium'>100+ Client Companies</span>
-        <span className='text-[#FFFFFF] bg-[#3e80ebf5] px-4 py-2 text-sm rounded-full font-medium'>Pan India Opportunities</span>
-        <span className='text-[#FFFFFF] bg-[#3e80ebf5] px-4 py-2 text-sm rounded-full font-medium'>Immediate Joining</span>
-        <span className='text-[#FFFFFF] bg-[#3e80ebf5] px-4 py-2 text-sm rounded-full font-medium'>Zero Placement Fee</span>
-      </div>
+   {/* jj */}
+<div className="max-w-6xl mx-auto flex flex-col item-center md:flex-row flex-wrap justify-center items-center mt-4 gap-4 md:gap-8">
+
+  <div className="flex items-center gap-2 py-2 px-4  w-[200px] h-[40px] rounded-full bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] shadow-md">
+  <Building2 size={17} className="text-white/90" />
+  <h3 className="text-[13px] text-white font-medium">100+ Client Companies</h3>
+</div>
+
+
+  <div className="flex items-center gap-2 py-2 px-4 w-[200px] h-[40px] rounded-full bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] shadow-md" 
+  >
+    <Globe size={20} className="text-white/90" />
+    <h3 className='text-[13px] text-white'>Pan India Opportunities</h3>
+  </div>
+
+  <div className="flex items-center gap-2 py-2 px-4  w-[200px] h-[40px] rounded-full bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] shadow-md"
+  >
+    <UserPlus size={20} className="text-white/90" />
+    <h3 className='text-[13px] text-white'>Immediate Joining</h3>
+  </div>
+
+  <div className="flex items-center gap-2 py-2 px-4  w-[200px] h-[40px] rounded-full bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] shadow-md"
+  >
+    <Users size={20} className="text-white/90" />
+    <h3 className='text-[13px] text-white'>Zero Placement Fee</h3>
+  </div>
+
+</div>
+
+
 
       {/* Job Cards */}
 
-   <div className='flex justify-center pt-8 pb-10 items-center gap-10 '>
+   <div className='flex flex-col md:flex-row justify-center pt-8 pb-10 items-center gap-10 '>
 
 
 

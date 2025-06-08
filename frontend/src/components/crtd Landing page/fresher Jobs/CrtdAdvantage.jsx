@@ -6,20 +6,21 @@ const CrtdAdvantage = () => {
     <div className='w-full h-screen bg-white'>
 <h1 className='text-[#053982] text-[31px] pb-3 font-semibold text-center capitalize'>Why choose CRTD for Your First Job?</h1>
 
-<div className='flex gap-8 px-28 pt-5'>
+<div className='flex flex-col md:flex-row gap-8 px-6 md:px-28 pb-3 pt-5'>
 
-<div className="h-[160px] w-[340px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm">
+<div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
   <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
     <span className="text-[22px]">✈️</span>
   </div>
-  <h3 className="text-[17px] font-bold text-black">Immediate Joining</h3>
-  <p className="text-[12px] text-gray-600 leading-tight text-center px-4">
+  <h3 className="text-[17px] font-bold text-black text-center">Immediate Joining</h3>
+  <p className="text-[12px] text-gray-600 leading-tight text-center px-2">
     Start your career right away with leading tech companies
   </p>
 </div>
 
 
-<div className="h-[160px] w-[340px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm">
+
+<div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
   <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
     <span className="text-[22px]">
       <img className='h-[30px] w-[30px]' src="https://rapidapi.com/hub/_next/image?url=https://rapidapi-prod-apis.s3.amazonaws.com/0c0e3ac1-709b-4181-83ed-842c60f8c8a6.jpg&w=3840&q=75" alt="" />
@@ -33,7 +34,7 @@ const CrtdAdvantage = () => {
 
  
 
-   <div className="h-[160px] w-[340px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm">
+   <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
   <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
     <span className="text-[22px]">
       <img className='h-[30px] w-[30px]' src="https://ugc.production.linktr.ee/52c02e07-adc2-4705-8994-06a1ce994567_image.jpeg" alt="" />
@@ -46,7 +47,7 @@ const CrtdAdvantage = () => {
 </div>
 
 
-   <div className="h-[160px] w-[340px] bg-gray-100  rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm">
+   <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
   <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
     <span className="text-[22px]">
       <img className='h-[20px] w-[20px]' src="https://static.vecteezy.com/system/resources/previews/014/350/770/non_2x/computer-file-folder-icon-outline-style-vector.jpg" alt="" />
@@ -59,6 +60,8 @@ const CrtdAdvantage = () => {
 </div>
 
 </div>
+
+
 
 <div class=" rounded-md p-5 max-w-[1340px] mx-auto">
   <h2 class="text-center text-[24px] font-bold text-blue-900 mb-6 pt-3">CRTD Advantage</h2>
