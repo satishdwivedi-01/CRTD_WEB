@@ -35,9 +35,7 @@ const Simple = () => {
 <h3 className='text-[17px]  bold text-white'>Zero placements charges- we bill companies,not candidates</h3>
 </div>
 
-  
 </div>
-
 
 <div className="box  h-[120px] w-[230px] md:h-[68px] md:w-[500px] bg-[#2152DA] py-4 px-4 rounded-[10px]">
 

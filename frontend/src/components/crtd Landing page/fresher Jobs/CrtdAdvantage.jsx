@@ -32,8 +32,6 @@ const CrtdAdvantage = () => {
   </p>
 </div>
 
- 
-
    <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
   <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
     <span className="text-[22px]">

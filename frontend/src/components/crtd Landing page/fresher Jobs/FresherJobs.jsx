@@ -15,4 +15,5 @@ const fresherJobs = () => {
   );
 };
 
+
 export default fresherJobs;

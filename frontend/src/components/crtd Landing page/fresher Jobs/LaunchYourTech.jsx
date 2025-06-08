@@ -9,7 +9,6 @@ const LAunchYourTech = () => {
   }}
     >
      
-
       <div className='flex justify-center pt-12 '>
        <div className='bg-gradient-to-r from-[#1E3C8F] to-[#2152DA] backdrop-blur-md text-white text-xs font-semibold px-6 py-3 h rounded-[50px] shadow-sm'>
   #1 Fresher Hiring Platform
@@ -55,14 +54,7 @@ const LAunchYourTech = () => {
 
 </div>
 
-
-
-      {/* Job Cards */}
-
    <div className='flex flex-col md:flex-row justify-center pt-8 pb-10 items-center gap-10 '>
-
-
-
 
 <div class="w-[239px] h-[382px] rounded-xl bg-white shadow-md p-4 flex flex-col justify-between">
 
