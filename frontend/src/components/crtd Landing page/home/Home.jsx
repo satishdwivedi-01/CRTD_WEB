@@ -9,7 +9,7 @@ import Awards from './Awards'
 import Impacts from './Impacts'
 import HowItWorks from './HowItWorks'
 import Testimonials from './Testimonials'
-import Footer from './Footer'
+import Footer from '../../Footer'
 
 
 const Home = () => {

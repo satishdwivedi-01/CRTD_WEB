@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Eye, EyeOff, Calendar } from "lucide-react";
-import CareerGuidanceNavbar from "../Career-Guidance/CareerGuidanceSidenavbar";
+import CareerGuidanceNavbar from "../CareerGuidanceSidenavbar";
 
 const AccountSettings = () => {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
