@@ -18,7 +18,6 @@ function App() {
 
   return (
     <>
-
       {/* Define Routes */}
       <Routes>
         <Route path="/" element={< Home />} />
