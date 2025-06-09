@@ -1,0 +1,293 @@
+/* PersonalDetails.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2d6cdf;
+}
+.sub-line{
+    margin-bottom: 20px;
+    font-size:14px;
+    font-weight: bold;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hr{
+    width:100%;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.ID{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ID p{
+  margin-right:10px;
+  font-size:10px;
+}
+.ID span{
+  color:#E75858;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6B6B6B;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.email {
+  font-size: 12px;
+  color: #777;
+}
+
+.status {
+  font-size: 12px;
+  color: orange;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  padding: 10px 0;
+  font-size: 14px;
+  position: relative;
+  list-style-type: none;
+  
+}
+
+nav li.active {
+  font-weight: bold;
+  color: #2d6cdf;
+}
+nav li::before,
+nav li::after {
+  content: none !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+ul li.active {
+  background-color: #f0f8ff;
+}
+ul li.locked{
+    color:#6B6B6B
+}
+ul li.img{
+    margin:15px;
+}
+ul li:hover {
+  background-color: #f5f7fa;
+}
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge.locked {
+  color: #767a79d3;
+  font-size:11px;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+.signout {
+  background: none;
+  border: none;
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signout-img{
+  margin-right: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+.profile-incomplete {
+  background-color: #FFFBEB;
+  padding: 20px;
+  border-left: 10px solid #ffc107;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #B23D3D;
+}
+
+.details-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.details-form h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.details-form label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.details-form input,
+.details-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color:#6b6b6bef;
+}
+
+.details-form textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.checkbox {
+  font-size: 14px;
+  margin: 10px 0 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #2d6cdf;
+}
+
+.edit-button {
+  background-color: #2d6cdf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #888;
+}
+.checkBox{
+    display: flex;
+    margin:5px;
+}
+.checkBox input{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 992px) {
+ .details-form label {
+    font-size: 12px;
+  }
+
+ .form-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dashboard-container {
+    font-family: "Poppins", sans-serif;
+   
+}
+
+.sidebar {
+    width: 290px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563EB;
+    white-space: nowrap;
+}
+
+.logo-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+.user-profile {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.avatar {
+    min-width: 50px;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.user-details {
+    flex: 1;
+    min-width: 0;
+    /* Prevent flex item from growing beyond container */
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-email {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-id {
+    display: inline-block;
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.status {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.status.pending {
+    padding-left: 30px;
+    color: #856404;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-link.active {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.badge.locked {
+    background-color: #f5f5f5;
+    color: #999;
+}
+
+.signout-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #EF4444;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.signout-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.signout-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* Mobile menu toggle button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .sidebar {
+        position: fixed;
+        left: -290px;
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .user-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 10px;
+    }
+
+    .user-details {
+        text-align: center;
+    }
+
+    .status {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

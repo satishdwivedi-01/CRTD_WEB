@@ -7,6 +7,9 @@ import FresherJobs from './components/crtd Landing page/fresher Jobs/FresherJobs
 import AllContactUs from './components/crtd Landing page/contact Us/AllContactUs'
 import PricingTab from './components/crtd Landing page/Pricing/components/PricingTab'
 import ServicesTab from './components/crtd Landing page/services/Components/servicesTab'
+import LoginPage from './components/crtd Landing page/Login and SignUp/components/LoginPage/LoginPage'
+import SignUpPage from './components/crtd Landing page/Login and SignUp/components/SignUp/SignUpPage'
+
 
 
 // import './App.css'
@@ -26,6 +29,8 @@ import Job from './components/JobBoard/Job'
 
 import Popup from './components/JobBoard/Popup'
 
+import StudentHome from './components/student/student-dashboard/components/home/Home'
+
 
 function App() {
 
@@ -40,6 +45,8 @@ function App() {
       <Route path="/contact-us" element={<AllContactUs />} />
       <Route path="/pricing" element={<PricingTab />} />
       <Route path="/services" element={<ServicesTab />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/signup" element={<SignUpPage />} />
 
 
       {/* Student Pages */}
@@ -55,6 +62,8 @@ function App() {
 
       <Route path="/job-board" element={<Job />} />
       <Route path="/Popup" element={<Popup />} />
+
+      <Route path="/dashboard" element={<StudentHome />} />
 
       {/* Dashboard + pay-now */}
       <Route path="/dashboard/pay-now" element={<DashboardLayout />}>

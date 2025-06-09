@@ -19,8 +19,9 @@ const navbar = () => {
                 <li><NavLink to="/contact-Us" className='text-[18px] font-[600]'>Contact Us</NavLink></li>
             </ul>
             <div className='flex gap-5 '>
-                <button className=" text-black px-4 py-2 rounded border-2 border-gray-600 w-[9rem] font-semibold text-[18px]">Login</button>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded w-[10rem] font-semibold text-[18px]">Register Now</button>
+                <NavLink to="/login"><button className=" text-black px-4 py-2 rounded border-2 border-gray-600 w-[9rem] font-semibold text-[18px]">Login</button></NavLink>
+
+                <NavLink to="/signUp"><button className="bg-blue-600 text-white px-4 py-2 rounded w-[10rem] font-semibold text-[18px]">Register Now</button></NavLink>
             </div>
         </nav>
     )

@@ -1,0 +1,459 @@
+:root {
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --primary-color: #3d5af1;
+    --primary-dark: #2f48d3;
+    --secondary-color: #f0f4ff;
+    --text-color: #555;
+    --light-gray: #eee;
+    --card-bg: #f9f9f9;
+    --warning-bg: #fef2c0;
+    --warning-text: #8a6d3b;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alert-box {
+    color: #B23D3D;
+    background: #FFFBEB;
+    font-family: 400;
+    font-size: 16px;
+    border-left: 10px solid #FBBF24;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.spl {
+    font-family: 300;
+    color: #E75858;
+}
+
+.welcome-text {
+    align-items: left;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.profile-container {
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.profile-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-alert {
+    width: 80px;
+    height: 81px;
+    font-size: 2rem;
+}
+
+.status-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
+
+.status-subtitle {
+    font-weight: var(--font-regular);
+    margin: 4px 0 0;
+    opacity: 0.9;
+}
+
+.progress-section {
+    padding: 1.5rem 2rem;
+    background: #fff;
+}
+
+.progress-title {
+    font-size: 20px;
+    font-weight: var(--font-medium);
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--light-gray);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary-color);
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.progress-percentage {
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    width: 427px;
+    min-height: 194px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.icon-container {
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DBEAFE;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-weight: var(--font-medium);
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.status-badge {
+    background-color: #FFEB68;
+    color: #E87833;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: var(--font-medium);
+    font-size: 0.75rem;
+}
+
+.card-subtitle {
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.home-layout ul {
+    padding-left: 0;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    list-style-type: none;
+}
+
+.home-layout ul li {
+    margin-bottom: 0.3rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+
+
+.complete-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.complete-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.info-grid {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-grid .info-card {
+    width: 306px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-grid .info-card .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-grid .info-card h4 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info-grid .info-card ul {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 8px 0 0 0;
+    flex-grow: 1;
+}
+
+.info-grid .info-card ul li {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-grid .info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-grid .info-card.tips {
+    background: linear-gradient(0deg, #90C2FF, #DEECFE);
+}
+
+.info-grid .info-card.tips h4,
+.info-grid .info-card.tips ul li {
+    color: #023D8D;
+}
+
+.info-grid .info-card.benefits {
+    background: linear-gradient(0deg, #8FDFAB, #D7FFE5);
+}
+
+.info-grid .info-card.benefits h4,
+.info-grid .info-card.benefits ul li {
+    color: #0F903F;
+}
+
+.info-grid .info-card.steps {
+    background: linear-gradient(0deg, #FBE99F, #FFF9E2);
+}
+
+.info-grid .info-card.steps h4,
+.info-grid .info-card.steps ul li {
+    color: #B6430E;
+}
+
+.support-box {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 964px;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.support-box h3 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: var(--font-medium);
+    width: 100%;
+}
+
+.support-box p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 700px;
+    width: 100%;
+}
+
+.support-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: none;
+}
+
+.support-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    background: #DBEAFE;
+    color: #2563EB;
+    transition: all 0.3s;
+    font-size: 1rem;
+    min-width: 180px;
+    border: none;
+}
+
+.support-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(58, 54, 219, 0.2);
+}
+
+.support-btn.secondary {
+    background: #E9E9E9;
+    color: #4B5563;
+}
+
+.support-btn.secondary:hover {
+    background: #f5f7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    font-weight: 500;
+    font-size: 14px;
+    color: #78797A;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .progress-section,
+    .card-container {
+        padding: 1rem;
+    }
+
+    .info-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-grid .info-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .support-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .support-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .alert-box {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .welcome-text,
+    .status-title {
+        font-size: 20px;
+    }
+
+    .progress-percentage {
+        font-size: 20px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-badge {
+        margin-top: 8px;
+    }
+
+    .info-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon-container {
+        margin-bottom: 1rem;
+    }
+
+    .complete-btn {
+        align-self: center;
+    }
+}

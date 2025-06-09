@@ -1,0 +1,262 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.header {
+  background-color: #fff;
+  padding: 1rem 10rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo img {
+  height: 24px;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 80px);
+}
+
+.login-left {
+  flex: 1;
+  background-color: #ffffff7a;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.login-icon {
+  background-color: #e6efff;
+  color: #2563eb;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.login-form-card h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom:0px;
+}
+.subtext {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #999;
+}
+.input-group input {
+  width: 90%;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+.checkbox-group1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.checkbox-group1 a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.login-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.switch-login {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.switch-login a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-right {
+  flex: 1;
+  background-color: #1E52DB;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.login-info-box {
+  max-width: 400px;
+  width: 100%;
+  background-color: #3767E2;
+  padding: 60px;
+  padding-left: 30px;
+  border-radius: 20px;
+}
+.login-info-box h2 {
+  margin-bottom: 1rem;
+  font-size:27px;
+  text-align: center;
+}
+.login-info-box p {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.login-stats {
+  display: flex;
+  gap: 1rem;
+}
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+.stat-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.stat-card p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+  .login-right {
+    text-align: center;
+  }
+  .login-stats {
+    flex-direction: column;
+  }
+}
+/* Additional Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+
+  .login-info-box {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    flex: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .login-right {
+    height: auto;
+  }
+
+  .login-form-card,
+  .login-info-box {
+    max-width: 100%;
+  }
+
+  .login-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-card {
+    min-width: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .login-left,
+  .login-right {
+    padding: 1.5rem 1rem;
+  }
+
+  .login-form-card {
+    padding: 1.5rem;
+  }
+
+  .stat-card {
+    min-width: 100%;
+  }
+
+  .checkbox-group1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .input-group input {
+    width: 85%;
+  }
+}

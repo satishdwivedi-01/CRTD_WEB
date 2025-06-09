@@ -1,0 +1,36 @@
+.home-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dashboard-section {
+    width: 290px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.profile-status-section {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+@media (max-width: 992px) {
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .dashboard-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .profile-status-section {
+        padding: 15px;
+    } }
