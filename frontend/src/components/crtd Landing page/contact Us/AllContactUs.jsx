@@ -7,7 +7,7 @@ import ContactUs from './ContactUs/ContactUs'
 
 const AllContactUs = () => {
   return (
-    <div>
+    <div className='contact'>
       <Navbar />
       <Hero />
       <ContactUs/>

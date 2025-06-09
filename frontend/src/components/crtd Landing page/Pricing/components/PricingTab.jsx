@@ -10,7 +10,7 @@ import Footer from '../../../Footer';
 
 const PricingTab = () => {
   return (
-    <div >
+    <div className='pricing'>
       <Navbar />
       <Hero />
       <PricingPlans />

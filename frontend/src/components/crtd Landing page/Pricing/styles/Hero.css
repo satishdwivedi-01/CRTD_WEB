@@ -75,9 +75,9 @@
     height: 32px;
     background-color: #EEF9FF;
 }
- img{
-    width: 16px;
-    height: 16px;
+.pricing img{
+    width: 62px;
+    height: 62px;
     align-items: center;
 }
 .feature-card p{
@@ -86,7 +86,7 @@
     font-size: 12px;
     width: 229px;
 }
-h3{
+.pricing h3{
     color: #111827;
     font-weight: 400;
     font-size: 18px;

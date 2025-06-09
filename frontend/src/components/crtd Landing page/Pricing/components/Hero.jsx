@@ -6,7 +6,7 @@ import frame2 from '../../../../assets/Images/Frame (2).png';
 import frame3 from '../../../../assets/Images/Frame (3).png';
 const Hero = () => {
   return (
-      <div className="hero-container mt-[5vh] ">
+      <div className="hero-container py-8 ">
           <h1>
               CRTD Technologies – <br />
               <span className="highlight">Fresher Hiring </span>

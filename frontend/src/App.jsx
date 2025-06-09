@@ -4,7 +4,9 @@ import { Routes, Route, Link } from 'react-router-dom'
 
 import Home from './components/crtd Landing page/home/Home'
 import FresherJobs from './components/crtd Landing page/fresher Jobs/FresherJobs'
-import './App.css'
+import AllContactUs from './components/crtd Landing page/contact Us/AllContactUs'
+import PricingTab from './components/crtd Landing page/Pricing/components/PricingTab'
+// import './App.css'
 import DashboardLayout from './components/student/dashboard/DashboardLayout'
 import Meeting from './components/student/dashboard/Meeting'
 
@@ -32,7 +34,8 @@ function App() {
 
       <Route path="/" element={< Home />} />
       <Route path="/fresherJobs" element={<FresherJobs />} />
-
+      <Route path="/contact-us" element={<AllContactUs />} />
+      <Route path="/pricing" element={<PricingTab />} />
 
 
       {/* Student Pages */}
