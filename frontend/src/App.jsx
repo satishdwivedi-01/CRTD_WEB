@@ -1,9 +1,12 @@
+
 import { Routes, Route, Link } from 'react-router-dom'
+
 
 import Home from './components/crtd Landing page/home/Home'
 import FresherJobs from './components/crtd Landing page/fresher Jobs/FresherJobs'
-
 import './App.css'
+import DashboardLayout from './components/student/dashboard/DashboardLayout'
+import Meeting from './components/student/dashboard/Meeting'
 
 import PersonalDetails from './components/PersonalDetails/PersonalDetails'
 import ConfirmPersonalDetails from './components/PersonalDetails/ConfirmPersonalDetails'
@@ -22,7 +25,18 @@ import Popup from './components/JobBoard/Popup'
 function App() {
 
   return (
-    <>
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/" element={<Home />} />
+      <Route path="/fresherJobs" element={<FresherJobs />} />
+
+
+    {/* Dashboard + Menu Layout */}
+      <Route path="/" element={<DashboardLayout />}>
+        <Route path="/dashboard" element={<Meeting />} />
+        {/* Add more nested routes here if needed */}
+      </Route>
+    </Routes>
 
       {/* Define Routes */}
     
@@ -51,9 +65,12 @@ function App() {
 
       </Routes>
 
-    </>
+
+     
   )
 }
 
+
 export default App;
+
 
