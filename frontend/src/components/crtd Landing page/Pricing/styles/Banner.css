@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.cta-section {
+    background: linear-gradient(90deg, #4a56e2 0%, #2d368f 100%);
+    padding: 40px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 90%;
+    max-width: 1133px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.cta-content h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-btn,
+.pricing-btn {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn {
+    background-color: #ffffff;
+    color: #0082DF;
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: #e8e8e8;
+}
+
+.pricing-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.pricing-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .cta-section {
+        padding: 50px 30px;
+    }
+
+    .cta-content h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .cta-content p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .contact-btn,
+    .pricing-btn {
+        padding: 14px 26px;
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cta-section {
+        padding: 60px 40px;
+        height: auto;
+    }
+
+    .cta-content h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .cta-content p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .cta-buttons {
+        gap: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .cta-section {
+        height: 380px;
+    }
+}

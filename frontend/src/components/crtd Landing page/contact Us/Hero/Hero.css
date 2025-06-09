@@ -1,0 +1,30 @@
+.hero-container {
+  background: linear-gradient(0deg, #2152DA, #1E3C8F);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;     
+  align-items: center;       
+}
+
+.hero-container h1 {
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-container .highlight {
+  color: #c3d4ff;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+}

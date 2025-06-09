@@ -1,0 +1,93 @@
+/* src/components/HeroSection.css */
+
+.hero-container {
+    background: linear-gradient(0deg, #2152DA, #1E3C8F);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+.hero-container h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.hero-container .highlight {
+    color: #c3d4ff;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.hero-buttons {
+    margin: 30px 0;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #0082DF;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: #3a57e8;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    color: #111827;
+    border-radius: 10px;
+    padding: 20px;
+    width: 257px;
+    height: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: #EEF9FF;
+}
+ img{
+    width: 16px;
+    height: 16px;
+    align-items: center;
+}
+.feature-card p{
+    color: #4B5563;
+    font-weight: 400;
+    font-size: 12px;
+    width: 229px;
+}
+h3{
+    color: #111827;
+    font-weight: 400;
+    font-size: 18px;
+}

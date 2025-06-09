@@ -26,47 +26,41 @@ function App() {
 
   return (
     <Routes>
-      {/* Public Routes */}
-      <Route path="/" element={<Home />} />
+
+
+      {/* Landing Pages */}
+
+      <Route path="/" element={< Home />} />
       <Route path="/fresherJobs" element={<FresherJobs />} />
 
 
-    {/* Dashboard + Menu Layout */}
-      <Route path="/" element={<DashboardLayout />}>
-        <Route path="/dashboard" element={<Meeting />} />
+
+      {/* Student Pages */}
+      <Route path="/personal-details" element={<PersonalDetails />} />
+      <Route path="/editprofile" element={<ConfirmPersonalDetails />} />
+
+      <Route path="/careerguidance" element={<CareerGuidance />} />
+      <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
+
+      <Route path="/educational-info" element={<EducationalInfo />} />
+
+      <Route path="/accountsetting" element={<AccountSettings />} />
+
+      <Route path="/job-board" element={<Job />} />
+      <Route path="/Popup" element={<Popup />} />
+
+      {/* Dashboard + pay-now */}
+      <Route path="/dashboard/pay-now" element={<DashboardLayout />}>
+        <Route path="/dashboard/pay-now" element={<Meeting />} />
         {/* Add more nested routes here if needed */}
       </Route>
+
+
+
     </Routes>
 
-      {/* Define Routes */}
-    
-      {/* Landing Pages */}
-      <Routes>
-        <Route path="/" element={< Home />} />
-        <Route path="/fresherJobs" element={<FresherJobs />} />
-
-         
-
-        {/* Student Pages */}
-        <Route path="/personal-details" element={<PersonalDetails />} />
-        <Route path="/confirmprofile" element={<ConfirmPersonalDetails />} />
-       
-        <Route path="/careerguidance" element={<CareerGuidance />} />
-        <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
-          
-        <Route path="/educational-info" element={<EducationalInfo />} />
-        
-        <Route path="/accountsetting" element={<AccountSettings />} />
-
-        <Route path="/job-board" element={<Job />} />
-        <Route path="/Popup" element={<Popup />} />
 
 
-
-      </Routes>
-
-
-     
   )
 }
 

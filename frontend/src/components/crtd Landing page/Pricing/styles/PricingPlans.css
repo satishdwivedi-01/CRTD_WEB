@@ -1,0 +1,260 @@
+/* Base Styles */
+.pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Pricing Grid Layout */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Center the last two cards in second row */
+.pricing-grid> :nth-child(4) {
+    grid-column: 1 / span 1;
+    justify-self: end;
+}
+
+.pricing-grid> :nth-child(5) {
+    grid-column: 2 / span 1;
+    justify-self: start;
+}
+
+/* Pricing Card Styles */
+.pricing-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.pricing-card.highlighted {
+    border-color: #10b981;
+    background-color: #f0fdf4;
+    position: relative;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #10b981;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.card-top {
+    margin-bottom: 1.5rem;
+}
+
+.card-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #e0f2fe;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.plan-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.price-wrapper {
+    margin-bottom: 1rem;
+}
+
+.price-amount {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-left: 0.25rem;
+}
+
+/* Features List */
+.card-features {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+.card-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.check-icon {
+    color: #10b981;
+    font-weight: bold;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Buttons */
+.plan-button {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    background: #3b82f6;
+    color: white;
+}
+
+.plan-button:hover {
+    background: #2563eb;
+}
+
+.highlight-button {
+    background: #10b981;
+}
+
+.highlight-button:hover {
+    background: #059669;
+}
+
+/* Footer CTA */
+.pricing-footer {
+    text-align: center;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    color: #4B5563;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: linear-gradient(-90deg, #023D8D, #009DDC);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.cta-button:hover {
+    background: #1f2937;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-grid> :nth-child(3) {
+        grid-column: span 2;
+        max-width: 400px;
+        justify-self: center;
+    }
+
+    .pricing-grid> :nth-child(4),
+    .pricing-grid> :nth-child(5) {
+        grid-column: span 1;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid> :nth-child(n) {
+        grid-column: 1 !important;
+        max-width: 100%;
+    }
+
+    .pricing-card {
+        max-width: 400px;
+        margin: 0 auto;
+    } }

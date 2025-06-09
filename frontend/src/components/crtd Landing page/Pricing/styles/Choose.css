@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif !important;
+}
+
+.heading {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.heading h1 {
+    color: #053982;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 0.5rem;
+}
+
+.mini p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.mini-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 0 auto 4rem;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cards {
+    width: 100%;
+    min-height: 180px;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.cards:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: #EEF9FF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cards img {
+    width: 24px;
+    height: 24px;
+}
+
+.cards h2 {
+    color: #111827;
+    font-weight: 500;
+    /* Slightly bolder for better hierarchy */
+    font-size: 18px;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.cards p {
+    font-weight: 400;
+    font-size: 14px;
+    /* Slightly larger for better readability */
+    color: #4B5563;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .mini-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .mini-card {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .mini p {
+        font-size: 16px;
+    }
+}
