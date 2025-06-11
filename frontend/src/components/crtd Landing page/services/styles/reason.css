@@ -1,25 +1,26 @@
-.crtd-section {
-  background:linear-gradient(#0F172A,#1E293B);
+/* reason.css */
+.crtd-reasons-section {
+  background: linear-gradient(#0F172A, #1E293B);
   color: white;
   padding: 60px 20px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.section-title {
+.crtd-reasons-title {
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.section-subtitle {
+.crtd-reasons-subtitle {
   font-size: 16px;
   max-width: 700px;
   margin: 0 auto 40px;
   color: #cbd5e1;
 }
 
-.card-container {
+.crtd-reasons-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,7 +28,7 @@
   margin-bottom: 50px;
 }
 
-.info-card {
+.crtd-reasons-card {
   background-color: #1e293b;
   padding: 30px 20px;
   border-radius: 12px;
@@ -37,28 +38,28 @@
   transition: transform 0.3s ease;
 }
 
-.info-card:hover {
+.crtd-reasons-card:hover {
   transform: translateY(-5px);
 }
 
-.card-icon {
+.crtd-reasons-card-icon {
   font-size: 28px;
   color: #3b82f6;
   margin-bottom: 15px;
 }
 
-.card-title {
+.crtd-reasons-card-title {
   font-size: 20px;
   margin-bottom: 10px;
   color: #f1f5f9;
 }
 
-.card-description {
+.crtd-reasons-card-desc {
   font-size: 14px;
   color: #cbd5e1;
 }
 
-.cta-box {
+.crtd-reasons-cta-box {
   background: linear-gradient(90deg, #2563EB, #1E293B);
   border-radius: 12px;
   padding: 40px 20px;
@@ -67,34 +68,33 @@
   color: white;
   text-align: left;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.cta-box img {
+.crtd-reasons-cta-logo {
   width: 104px;
   height: 104px;
 }
 
-.cta-content {
+.crtd-reasons-cta-content {
   flex: 1;
 }
 
-.cta-heading {
+.crtd-reasons-cta-heading {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.cta-description {
+.crtd-reasons-cta-text {
   font-size: 15px;
   margin-bottom: 20px;
   color: #e0f2fe;
 }
 
-.cta-button {
+.crtd-reasons-cta-btn {
   color: #1d4ed8;
   border: none;
   padding: 10px 20px;
@@ -105,27 +105,27 @@
   background-color: white;
 }
 
-.cta-button:hover {
+.crtd-reasons-cta-btn:hover {
   background-color: #f1f5f9;
 }
 
 @media (max-width: 768px) {
-  .card-container {
+  .crtd-reasons-card-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .cta-box {
+  .crtd-reasons-cta-box {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 
-  .cta-box img {
+  .crtd-reasons-cta-logo {
     margin-bottom: 20px;
   }
 
-  .info-card {
+  .crtd-reasons-card {
     width: 100%;
     max-width: 340px;
   }

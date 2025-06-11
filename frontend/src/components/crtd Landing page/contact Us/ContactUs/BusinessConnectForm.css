@@ -1,0 +1,143 @@
+.business-connect-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.top-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-info h2 {
+    font-size: 36px;
+    color: #1F44AB;
+    font-weight: 600;
+}
+
+.top-info p {
+    color: #5F5F5F;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-top: 8px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: #1F44AB;
+    border-radius: 50%;
+}
+
+.circle img {
+    padding: 20px;
+}
+
+.icon-card {
+    display: flex;
+    align-items: left;
+    gap: 12px;
+    color: #333;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.icon-card span {
+    font-size: 30px;
+}
+
+.form-container {
+    background: linear-gradient(135deg, #2a3b8f, #3c58d2);
+    width: 1257px;
+    height: 747px;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-row.full-width {
+    flex-direction: column;
+    width: 1180px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.input-group textarea {
+    height: 124px;
+    width: 1180px;
+    resize: none;
+}
+
+form button {
+    width: 250px;
+    height: 54px;
+    align-self: flex-start;
+    background: white;
+    color: #2a3b8f;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #dfe6ff;
+}

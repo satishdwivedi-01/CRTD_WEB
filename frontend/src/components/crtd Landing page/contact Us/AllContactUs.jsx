@@ -1,16 +1,17 @@
 import React from 'react'
-import Hero from './Hero/Hero'
 import Navbar from '../../Navbar'
 import Footer from '../../Footer'
-import ContactUs from './ContactUs/ContactUs'
+import ContactSection from './ContactUs/ContactSection'
+import BusinessConnectForm from './ContactUs/BusinessConnectForm'
+
 
 
 const AllContactUs = () => {
   return (
     <div className='contact'>
       <Navbar />
-      <Hero />
-      <ContactUs/>
+      <ContactSection />
+      <BusinessConnectForm />
       <Footer />
     </div>
   )

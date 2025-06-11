@@ -177,7 +177,7 @@ const CServices = () => {
           Our <span className="services__highlight">Comprehensive</span> Services
         </h2>
         <p>
-          From mass hiring solutions to specialized fresher recruitment programs, we deliver end-to-end talent solutions for organizations of all sizes. Whether you're scaling your tech team or building a fresh graduate workforce, our services
+          From mass hiring solutions to specialized fresher recruitment programs, we deliver <br /> end-to-end talent solutions for organizations of all sizes. Whether you're scaling <br /> your tech team or building a fresh graduate workforce, our services <br />
           are designed to meet your unique hiring needs.
         </p>
       </div>
