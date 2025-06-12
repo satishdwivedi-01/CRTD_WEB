@@ -5,6 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectToDB from "./config/mongoose.config.js";
 import Userrouter from "./routes/user.routes.js";
+import EducationRouter from "./routes/education.routes.js"
 
 
 const app = express();
@@ -20,6 +21,7 @@ connectToDB();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/uploads', express.static('uploads'));
 
 // Enable CORS for all routes
 // Allow only your frontend domain (e.g., localhost:5173) to access the backend
@@ -35,6 +37,7 @@ app.use(cors(corsOptions));
 
 // User Routes
 app.use("/users", Userrouter);
+app.use("/education" , EducationRouter)
 
 
 app.listen(port, () => {
