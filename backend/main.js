@@ -1,30 +1,42 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
+import express from "express";
+import cookieParser from "cookie-parser";
+import cors from "cors";
+
+import dotenv from "dotenv";
+import connectToDB from "./config/mongoose.config.js";
+import Userrouter from "./routes/user.routes.js";
+
 
 const app = express();
-const PORT = 3000;
+
+const port = process.env.PORT || 3000;
+
+app.use(cookieParser()); // Middleware to parse cookies
+
+// Load env environment variables
+dotenv.config();
+
+connectToDB();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
+// Enable CORS for all routes
+// Allow only your frontend domain (e.g., localhost:5173) to access the backend
 const corsOptions = {
-  origin: 'http://localhost:5173', 
-  optionsSuccessStatus: 200
+  origin: [
+    "http://localhost:5173", // Allow frontend running locally
+  ],
+  credentials: true, // Allow cookies to be sent
 };
 
 app.use(cors(corsOptions));
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/CRTD')
-.then(() => console.log('MongoDB connected'))
-.catch((err) => console.error('MongoDB connection error:', err));
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// User Routes
+app.use("/users", Userrouter);
 
 
-
-app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+app.listen(port, () => {
+  console.log(`CRTD app listening on port ${port}`)
+})
