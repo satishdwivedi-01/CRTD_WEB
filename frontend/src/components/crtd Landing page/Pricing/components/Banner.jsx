@@ -3,17 +3,17 @@ import '../styles/Banner.css';
 
 const Banner = () => {
     return (
-        <div className="cta-section">
-            <div className="cta-content">
-                <h2>Ready to transform your hiring <br />
-                process?</h2>
-                <p>
+        <div className="crtd-banner-container">
+            <div className="crtd-banner-content-wrapper">
+                <h2 className="crtd-banner-heading">Ready to transform your hiring <br />
+                    process?</h2>
+                <p className="crtd-banner-description">
                     Join hundreds of companies that trust CRTD Technologies for their fresher <br />
                     recruitment needs.
                 </p>
-                <div className="cta-buttons">
-                    <button className="contact-btn">Contact Us Today</button>
-                    <button className="pricing-btn">View Pricing</button>
+                <div className="crtd-banner-button-group">
+                    <button className="crtd-banner-primary-btn">Contact Us Today</button>
+                    <button className="crtd-banner-secondary-btn">View Pricing</button>
                 </div>
             </div>
         </div>

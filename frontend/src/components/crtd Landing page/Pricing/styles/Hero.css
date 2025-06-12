@@ -1,93 +1,159 @@
-/* src/components/HeroSection.css */
-
-.hero-container {
+/* Hero.css */
+.crtd-hero-main-container {
     background: linear-gradient(0deg, #2152DA, #1E3C8F);
     color: white;
     text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 20px;
 }
 
-.hero-container h1 {
+.crtd-hero-main-heading {
     color: #FFFFFF;
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-bottom: 15px;
     padding: 0;
 }
 
-.hero-container .highlight {
+.crtd-hero-highlight {
     color: #c3d4ff;
 }
 
-.subtitle {
-    margin-top: 10px;
+.crtd-hero-subtitle {
+    margin: 15px auto 0;
     font-size: 18px;
     font-weight: 400;
     color: #e0e0e0;
+    max-width: 600px;
 }
 
-.hero-buttons {
-    margin: 30px 0;
+.crtd-hero-button-group {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.btn {
-    margin: 10px;
-    padding: 10px 20px;
+.crtd-btn {
+    margin: 0;
+    padding: 12px 24px;
     border: none;
     font-weight: 600;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.primary {
+.crtd-btn-primary {
     background-color: #0082DF;
     color: white;
 }
 
-.secondary {
+.crtd-btn-primary:hover {
+    background-color: #0069b5;
+    transform: translateY(-2px);
+}
+
+.crtd-btn-secondary {
     background-color: white;
     color: #3a57e8;
 }
 
-.features {
+.crtd-btn-secondary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.crtd-hero-features-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.feature-card {
+.crtd-feature-card {
     background: white;
     color: #111827;
     border-radius: 10px;
-    padding: 20px;
-    width: 257px;
-    height: 150px;
+    padding: 25px;
+    width: 280px;
+    min-height: 180px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
+    transition: transform 0.3s ease;
 }
 
-.icon {
-    width: 32px;
-    height: 32px;
+.crtd-feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.crtd-feature-icon {
+    width: 40px;
+    height: 40px;
     background-color: #EEF9FF;
-}
-.pricing img{
-    width: 62px;
-    height: 62px;
+    border-radius: 8px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
-.feature-card p{
+
+.crtd-feature-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.crtd-feature-title {
+    color: #111827;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.crtd-feature-description {
     color: #4B5563;
     font-weight: 400;
-    font-size: 12px;
-    width: 229px;
+    font-size: 14px;
+    line-height: 1.5;
 }
-.pricing h3{
-    color: #111827;
-    font-weight: 400;
-    font-size: 18px;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .crtd-hero-main-heading {
+        font-size: 42px;
+    }
+
+    .crtd-hero-subtitle {
+        font-size: 16px;
+    }
+
+    .crtd-hero-button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crtd-btn {
+        width: 200px;
+    }
+
+    .crtd-feature-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .crtd-hero-main-heading {
+        font-size: 32px;
+    }
+
+    .crtd-hero-main-container {
+        padding: 40px 15px;
+    }
 }

@@ -1,103 +1,101 @@
-import React from 'react'
+import React from 'react';
+import './CrtdAdvantage.css';
+import flight from '../../../assets/CRDTADV/Vector (3).png'
+import  building from '../../../assets/CRDTADV/Vector (4).png'
+import location from '../../../assets/CRDTADV/Vector (5).png'
+import folder from '../../../assets/CRDTADV/Vector (6).png'
 
 const CrtdAdvantage = () => {
   return (
+    <div className='crtd-advantage'>
+      <h1 className='crtd-advantage__title'>Why Choose CRTD for Your First Job?</h1>
 
-    <div className='w-full  bg-white pb-12'>
-      <h1 className='text-[#053982] text-[31px] pb-3 font-semibold text-center capitalize'>Why choose CRTD for Your First Job?</h1>
-
-      <div className='flex flex-col md:flex-row gap-8 px-6 md:px-28 pb-3 pt-5'>
-
-        <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
-          <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
-            <span className="text-[22px]">✈️</span>
+      <div className='crtd-advantage__cards'>
+        <div className="crtd-advantage__card">
+          <div className="crtd-advantage__card-icon-container">
+            <span className="crtd-advantage__card-icon"><img src={flight} alt="" /></span>
           </div>
-          <h3 className="text-[17px] font-bold text-black text-center">Immediate Joining</h3>
-          <p className="text-[12px] text-gray-600 leading-tight text-center px-2">
+          <h3 className="crtd-advantage__card-title">Immediate Joining</h3>
+          <p className="crtd-advantage__card-description">
             Start your career right away with leading tech companies
           </p>
         </div>
 
-
-
-        <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
-          <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
-            <span className="text-[22px]">
-              <img className='h-[30px] w-[30px]' src="https://rapidapi.com/hub/_next/image?url=https://rapidapi-prod-apis.s3.amazonaws.com/0c0e3ac1-709b-4181-83ed-842c60f8c8a6.jpg&w=3840&q=75" alt="" />
-            </span>
+        <div className="crtd-advantage__card">
+          <div className="crtd-advantage__card-icon-container">
+            <img
+              className='crtd-advantage__card-icon-img'
+              src={building}
+              alt="Top Companies"
+            />
           </div>
-          <h3 className="text-[17px] font-bold text-black">Top Companies</h3>
-          <p className="text-[12px] text-[#4C4C4C] leading-tight text-center px-1">
+          <h3 className="crtd-advantage__card-title">Top Companies</h3>
+          <p className="crtd-advantage__card-description">
             Work with industry leaders and Fortune 500 companies
           </p>
         </div>
 
-        <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
-          <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
-            <span className="text-[22px]">
-              <img className='h-[30px] w-[30px]' src="https://ugc.production.linktr.ee/52c02e07-adc2-4705-8994-06a1ce994567_image.jpeg" alt="" />
-            </span>
+        <div className="crtd-advantage__card">
+          <div className="crtd-advantage__card-icon-container">
+            <img
+              className='crtd-advantage__card-icon-img'
+              src={location}
+              alt="Location Flexibility"
+            />
           </div>
-          <h3 className="text-[17px] font-bold text-black">Location Flexibility</h3>
-          <p className="text-[12px] text-[#4C4C4C] text-center leading-tight px-4">
-            Choose from multiple office locations  or work remotely.
+          <h3 className="crtd-advantage__card-title">Location Flexibility</h3>
+          <p className="crtd-advantage__card-description">
+            Choose from multiple office locations or work remotely.
           </p>
         </div>
 
-
-        <div className="w-[70%] max-w-[280px] h-[160px] bg-gray-100 rounded-[21px] flex flex-col items-center justify-center gap-2 shadow-sm mx-auto px-2">
-          <div className="h-[50px] w-[50px] rounded-full bg-white flex items-center justify-center shadow-md">
-            <span className="text-[22px]">
-              <img className='h-[20px] w-[20px]' src="https://static.vecteezy.com/system/resources/previews/014/350/770/non_2x/computer-file-folder-icon-outline-style-vector.jpg" alt="" />
-            </span>
+        <div className="crtd-advantage__card">
+          <div className="crtd-advantage__card-icon-container">
+            <img
+              className='crtd-advantage__card-icon-img--small'
+              src={folder}
+              alt="1-year Access"
+            />
           </div>
-          <h3 className="text-[17px] font-bold text-black">1-year Access</h3>
-          <p className="text-[12px] text-[#4C4C4C] text-center px-4 leading-tight">
+          <h3 className="crtd-advantage__card-title">1-year Access</h3>
+          <p className="crtd-advantage__card-description">
             Apply to all openings for one full year with single registration
           </p>
         </div>
-
       </div>
 
+      <div className="crtd-advantage__benefits">
+        <h2 className="crtd-advantage__benefits-title">CRTD Advantage</h2>
 
-
-      <div class=" rounded-md p-5 max-w-[1340px] mx-auto">
-        <h2 class="text-center text-[24px] font-bold text-blue-900 mb-6 pt-3">CRTD Advantage</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 px-9">
-
-
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            One-time registration fee for 1-year access
+        <div className="crtd-advantage__benefits-grid">
+          <div className="crtd-advantage__benefit-item">
+            <p>One-time registration <br />fee for 1-year access</p>
           </div>
-
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug" >
-            Free career guidance
+          <div className="crtd-advantage__benefit-item">
+            <p>Free career <br /> guidance</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Multiple interview opportunities
+          <div className="crtd-advantage__benefit-item">
+            <p>Multiple interview <br />opportunities</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Career growth opportunities
+          <div className="crtd-advantage__benefit-item">
+            <p>Career growth <br /> opportunities</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Work from home options available
+          <div className="crtd-advantage__benefit-item">
+            <p>Work from home <br />options available</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Zero placement charges
+          <div className="crtd-advantage__benefit-item">
+            <p>Zero placement <br />charges</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Pan India job locations
+          <div className="crtd-advantage__benefit-item">
+            <p>Pan India job <br />locations</p>
           </div>
-          <div class="bg-blue-50 border-1 border-blue-100 text-center px-13 py-4 rounded-xl  text-[#053982] font-medium text-[13px] leading-snug">
-            Regular hiring updates
+          <div className="crtd-advantage__benefit-item">
+            <p>Regular hiring <br />updates</p>
           </div>
         </div>
       </div>
-
-
     </div>
-  )
+  );
 }
 
-export default CrtdAdvantage
+export default CrtdAdvantage;
