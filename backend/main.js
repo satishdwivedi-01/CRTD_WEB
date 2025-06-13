@@ -5,8 +5,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectToDB from "./config/mongoose.config.js";
 import Userrouter from "./routes/user.routes.js";
-
-
+import JobRouter from "./routes/job.routes.js";
+import applicationRoutes from './routes/application.routes.js';
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -35,6 +35,8 @@ app.use(cors(corsOptions));
 
 // User Routes
 app.use("/users", Userrouter);
+app.use("/jobs", JobRouter);
+app.use('/applications', applicationRoutes);
 
 
 app.listen(port, () => {

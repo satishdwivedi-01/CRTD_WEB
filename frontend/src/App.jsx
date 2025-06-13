@@ -31,7 +31,7 @@ import Popup from './components/JobBoard/Popup'
 
 import StudentHome from './components/student/student-dashboard/components/home/Home'
 import EditDetails from './components/PersonalDetails/EditDetails'
-
+import CreateJobForm from './components/admin/CreateJobForm'
 
 function App() {
 
@@ -66,6 +66,7 @@ function App() {
       <Route path="/Popup" element={<Popup />} />
 
       <Route path="/dashboard" element={<StudentHome />} />
+  <Route path="/CreateJobForm" element={<CreateJobForm />} />
 
       {/* Dashboard + pay-now */}
       <Route path="/dashboard/pay-now" element={<DashboardLayout />}>
