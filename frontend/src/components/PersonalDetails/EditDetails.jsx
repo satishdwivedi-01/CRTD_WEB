@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { User, MapPin, Phone, Mail, Calendar, AlertCircle } from 'lucide-react';
 import SideNavbar from './SideNavbar';
 import axios from 'axios';
-
+import { toast } from 'react-toastify';
 
 const EditDetails = () => {
   const [formData, setFormData] = useState({
@@ -43,11 +43,11 @@ const handleSubmit = async (e) => {
       },
     });
 
-    alert('Profile updated successfully!');
+toast.info('Profile updated successfully!');
     console.log(response.data);
   } catch (error) {
     console.error('Error updating profile:', error.response?.data || error.message);
-    alert('Failed to update profile. Please try again.');
+   toast.info('Failed to update profile. Please try again.');
   }
 };
 

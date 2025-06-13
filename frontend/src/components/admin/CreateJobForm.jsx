@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const CreateJobForm = () => {
   const [formData, setFormData] = useState({
@@ -27,10 +28,10 @@ const CreateJobForm = () => {
       const res = await axios.post("http://localhost:3000/jobs/create", payload, {
         withCredentials: true,
       });
-      alert("Job Created Successfully");
+toast.info("Job Created Successfully");
       console.log(res.data);
     } catch (error) {
-      alert("Error creating job");
+      toast.info("Error creating job");
       console.error(error);
     }
   };

@@ -32,10 +32,16 @@ import Popup from './components/JobBoard/Popup'
 import StudentHome from './components/student/student-dashboard/components/home/Home'
 import EditDetails from './components/PersonalDetails/EditDetails'
 import CreateJobForm from './components/admin/CreateJobForm'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
 
   return (
+
+        <>
+         <ToastContainer position="bottom-right" />
     <Routes>
 
 
@@ -75,10 +81,10 @@ function App() {
       </Route>
 
 
-
+   
     </Routes>
 
-
+</>
 
   )
 }
