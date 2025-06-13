@@ -30,6 +30,7 @@ import Job from './components/JobBoard/Job'
 import Popup from './components/JobBoard/Popup'
 
 import StudentHome from './components/student/student-dashboard/components/home/Home'
+import EditDetails from './components/PersonalDetails/EditDetails'
 
 
 function App() {
@@ -51,8 +52,9 @@ function App() {
 
       {/* Student Pages */}
       <Route path="/personal-details" element={<PersonalDetails />} />
-      <Route path="/editprofile" element={<ConfirmPersonalDetails />} />
-
+      <Route path="/editprofile" element={<EditDetails />} />
+       <Route path="/confirmprofile" element={<ConfirmPersonalDetails />} />
+      
       <Route path="/careerguidance" element={<CareerGuidance />} />
       <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
 
