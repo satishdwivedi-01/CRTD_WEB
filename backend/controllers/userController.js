@@ -2,26 +2,21 @@ import User from "../models/user.model.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-// Register a new user
 export const registerUser = async (req, res) => {
   try {
     const { username, email, phone, password, confirmPassword } = req.body;
 
-    // Check if password and confirmPassword match
     if (password !== confirmPassword) {
       return res.status(400).json({ message: "Passwords do not match" });
     }
 
-    // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "Email already in use" });
     }
 
-    // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Create user object (without confirmPassword)
     const newUser = new User({
       username,
       email,
@@ -36,7 +31,6 @@ export const registerUser = async (req, res) => {
   }
 };
 
-// login user
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
