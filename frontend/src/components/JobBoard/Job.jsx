@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import menu from "../../assets/menu.png";
 import person from "../../assets/person.png";
@@ -14,19 +14,21 @@ import fullstack from "../../assets/fullstack.png";
 import lock from "../../assets/lock.png";
 
 import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+import Popup from './Popup';
 
 
 
 const Job = () => {
+   const [showPopup, setShowPopup] = useState(false);
+
+
   return (
+    <>
     <div className="w-full h-[1091px] flex  bg-white">
 
 
 
       <CareerGuidanceNavbar/>
-
-
-
 
       <div className='ml-[50px] text-black' >
         <div className="mt-7 mx-16">
@@ -99,16 +101,12 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>React</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-3.5 mt-3 text-center justify-center'>
-              <div className=' flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
-
-
-
+             <button
+         onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
 
           </div>
 
@@ -174,13 +172,12 @@ const Job = () => {
                 <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>SQL</h1>
               </div>
             </div>
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-11 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+        <button
+         onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-11 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
           </div>
 
 
@@ -246,13 +243,12 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>iOS</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-3 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+           <button
+            onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
           </div>
 
           <div className='w-[239px] h-[382px] bg-white rounded-[10px] shadow-[0px_0px_10px_rgba(0,0,0,0.25)]'>
@@ -317,14 +313,12 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>Database</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-3 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
-
+         <button
+          onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
 
 
 
@@ -400,13 +394,12 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>React</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-3 text-center justify-center'>
-              <div className=' flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+         <button
+          onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
 
 
 
@@ -475,13 +468,12 @@ const Job = () => {
                 <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>SQL</h1>
               </div>
             </div>
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-11 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+         <button
+          onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-11 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
           </div>
 
 
@@ -547,13 +539,12 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>iOS</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-3 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+           <button
+            onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
           </div>
 
           <div className='w-[239px] h-[382px] bg-white rounded-[10px] shadow-[0px_0px_10px_rgba(0,0,0,0.25)]'>
@@ -618,13 +609,13 @@ const Job = () => {
               <h1 className='text-[10px] font-normal font-poppins text-[rgba(37,99,235,1)]'>Database</h1>
             </div>
 
-            <div className='w-[207px] h-[37px] rounded-md  bg-[rgba(36,97,234,1)] flex items-center mx-4 mt-3 text-center justify-center'>
-              <div className='flex flex-row'>
-                <h1 className='text-[12px] font-poppins text-white font-normal '>Apply Now
-                </h1>
-                <img src={lock} alt='' className='w-[9px] h-[11px] mx-2 mt-1' />
-              </div>
-            </div>
+     <button
+         onClick={() => setShowPopup(true)}
+  className="w-[207px] h-[37px] rounded-md bg-[rgba(36,97,234,1)] flex items-center justify-center mx-4 mt-3 text-white text-[12px] font-poppins font-normal"
+>
+  Apply Now
+</button>
+
 
 
 
@@ -645,8 +636,9 @@ const Job = () => {
 
       </div>
     </div>
+     {showPopup && <Popup onClose={() => setShowPopup(false)} />}
 
-
+ </>
 
 
   );
