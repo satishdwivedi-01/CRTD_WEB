@@ -13,12 +13,10 @@ import Mobile from "../../../assets/mobile.png";
 import fullstack from "../../../assets/fullstack.png";
 import lock from "../../../assets/lock.png";
 
-<<<<<<< HEAD:frontend/src/components/student/JobBoard/Job.jsx
+
 import CareerGuidanceNavbar from '../../StudentSideNavBar';
-=======
-import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
 import Popup from './Popup';
->>>>>>> 16246f637a5de1ef11fb9fb0283b359d892546aa:frontend/src/components/JobBoard/Job.jsx
+
 
 
 

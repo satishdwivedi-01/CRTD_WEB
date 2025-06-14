@@ -67,37 +67,37 @@ body, html {
   color: orange;
 }
 
-nav ul {
+.containerB nav ul {
   list-style: none;
   padding: 0;
   text-decoration: none;
     color: black;
 }
 
-nav li {
+.containerB nav li {
   padding: 10px 0;
   font-size: 14px;
   position: relative;
   
 }
 
-nav li.active {
+.containerB nav li.active {
   font-weight: bold;
   color: #2d6cdf;
 }
 
-ul {
+.containerB ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-ul li a {
+.containerB ul li a {
   text-decoration: none;
   color: inherit;
 
 }
 
-ul li {
+.containerB ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,16 +109,16 @@ ul li {
   text-decoration: none;
 }
 
-ul li.active {
+.containerB ul li.active {
   background-color: #f0f8ff;
 }
-ul li.locked{
+.containerB ul li.locked{
     color:#6B6B6B
 }
-ul li.img{
+.containerB ul li.img{
     margin:15px;
 }
-ul li:hover {
+.containerB ul li:hover {
   background-color: #f5f7fa;
 }
 .badge {
@@ -233,7 +233,7 @@ ul li:hover {
   margin-top: 10px;
 }
 
-footer {
+.containerB footer {
   text-align: center;
   margin-top: 40px;
   font-size: 12px;

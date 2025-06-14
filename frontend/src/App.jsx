@@ -13,8 +13,8 @@ import SignUpPage from './components/crtd Landing page/Login and SignUp/componen
 
 
 // import './App.css'
-import DashboardLayout from './components/student/dashboard/DashboardLayout'
-import Meeting from './components/student/dashboard/Meeting'
+import DashboardLayout from './components/student/Meet/DashboardLayout'
+import Meeting from './components/student/Meet/Meeting'
 
 import PersonalDetails from './components/student/PersonalDetails/PersonalDetails'
 import ConfirmPersonalDetails from './components/student/PersonalDetails/ConfirmPersonalDetails'
@@ -30,7 +30,7 @@ import Job from './components/student/JobBoard/Job'
 import Popup from './components/student/JobBoard/Popup'
 
 import StudentHome from './components/student/student-dashboard/components/home/Home'
-import EditDetails from './components/PersonalDetails/EditDetails'
+import EditDetails from './components/student/PersonalDetails/EditDetails'
 import CreateJobForm from './components/admin/CreateJobForm'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

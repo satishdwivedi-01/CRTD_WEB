@@ -1,12 +1,7 @@
 import React from "react";
-<<<<<<< HEAD:frontend/src/components/student/JobBoard/Popup.jsx
 import frontend from "../../../assets/frontend.png";
 import cross from "../../../assets/cross.png";
-=======
-import frontend from "../../assets/frontend.png";
-import cross from "../../assets/cross.png";
-// import arrowLeft from "../../assets/arrow-left.png"; // If you have a left arrow icon
->>>>>>> 16246f637a5de1ef11fb9fb0283b359d892546aa:frontend/src/components/JobBoard/Popup.jsx
+
 
 const Popup = ({ onClose }) => {
   return (
