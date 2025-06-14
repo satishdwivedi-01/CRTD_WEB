@@ -1,8 +1,8 @@
 import React from 'react'
 import { FiHeadphones, FiLock } from 'react-icons/fi';
 import RegistrationCompleteBanner from './RegistrationCompleteBanner';
-import JobBoardCard from '../dashboard/JobBoardCard';
-import CareerGuidanceCard from '../dashboard/CareerGuidanceCard';
+import JobBoardCard from '../Meet/JobBoardCard';
+import CareerGuidanceCard from '../Meet/CareerGuidanceCard';
 import WhiteShadowCard from './WhiteShadowCard';
 import WhiteShadowCard2 from './WhiteShadowCard2';
 import ResourcesTipsCard from './ResourcesTipsCard';

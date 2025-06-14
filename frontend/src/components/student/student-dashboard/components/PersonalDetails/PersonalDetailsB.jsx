@@ -3,7 +3,7 @@ import "../../styles/PersonalDetailsB.css";
 
 const PersonalDetailsB = () => {
   return (
-    <div className="container">
+    <div className="containerB">
       <aside className="sidebar">
         <h2 className="logo">CRTD Technologies</h2>
         <p className="sub-line">Connecting freshers</p>

@@ -81,12 +81,12 @@ body, html {
   color: orange;
 }
 
-nav ul {
+.containerA nav ul {
   list-style: none;
   padding: 0;
 }
 
-nav li {
+.containerA nav li {
   padding: 10px 0;
   font-size: 14px;
   position: relative;
@@ -94,21 +94,21 @@ nav li {
   
 }
 
-nav li.active {
+.containerA nav li.active {
   font-weight: bold;
   color: #2d6cdf;
 }
-nav li::before,
-nav li::after {
+.containerA nav li::before,
+.containerA nav li::after {
   content: none !important;
 }
-ul {
+.containerA ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+.containerA ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,22 +120,22 @@ ul li {
   
 }
 
-ul li a {
+.containerA ul li a {
   text-decoration: none;
   color: inherit;
   
 }
 
-ul li.active {
+.containerA ul li.active {
   background-color: #f0f8ff;
 }
-ul li.locked{
+.containerA ul li.locked{
     color:#6B6B6B
 }
-ul li.img{
+.containerA ul li.img{
     margin:15px;
 }
-ul li:hover {
+.containerA ul li:hover {
   background-color: #f5f7fa;
 }
 .badge {
@@ -252,7 +252,7 @@ ul li:hover {
   margin-top: 10px;
 }
 
-footer {
+.containerA footer {
   text-align: center;
   margin-top: 40px;
   font-size: 12px;

@@ -6,7 +6,7 @@ import CrtdAdvantage from "./CrtdAdvantage";
 import Footer from "../../Footer";
 const fresherJobs = () => {
   return (
-    <div className="bg-white text-black ">
+    <div className="iAmFreshersJobs bg-white text-black ">
       <Navbar />
       <LaunchYourTech />
       <Simple/>

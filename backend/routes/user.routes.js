@@ -3,7 +3,9 @@ import {
   registerUser,
   loginUser,
   getAllUsers,
-  getUserById
+  getUserById,
+  updateProfile
+  
 } from "../controllers/userController.js";
 
 const Userrouter = express.Router();
@@ -12,6 +14,6 @@ Userrouter.post("/register", registerUser);
 Userrouter.post("/login", loginUser);
 Userrouter.get("/getUsers", getAllUsers);
 Userrouter.get("/getUserById/:id", getUserById);
-
+Userrouter.put("/profile/:id", updateProfile);
 export default Userrouter;
 

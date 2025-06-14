@@ -4,7 +4,7 @@ import "./LoginPage.css";
 
 function LoginPage() {
   return (
-    <div>
+    <div className="iamLogin">
       <header className="header">
         <div className="logo">
           <img src="crtdLogo.png" alt="CRTD Logo" /> CRTD Technologies

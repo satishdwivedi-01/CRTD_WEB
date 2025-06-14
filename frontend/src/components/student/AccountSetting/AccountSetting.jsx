@@ -3,6 +3,8 @@ import { Eye, EyeOff, Calendar } from "lucide-react";
 import CareerGuidanceNavbar from "../CareerGuidanceSidenavbar";
 import axios from "axios";
 
+import CareerGuidanceNavbar from "../../StudentSideNavBar";
+
 const AccountSettings = () => {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);

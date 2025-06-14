@@ -1,8 +1,15 @@
 import { Upload } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< HEAD:frontend/src/components/Career-Guidance/RequestNewGuidance.jsx
 import React, { useState, useEffect } from 'react';
 import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
 import axios from 'axios';
+=======
+
+import React, { useState } from 'react';
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
+
+>>>>>>> 067f90f7b0a13a1cc7a42cf9c70d89dc45d1328e:frontend/src/components/student/Career-Guidance/RequestNewGuidance.jsx
 
 const RequestNewGuidance = () => {
   const [activeTab, setActiveTab] = useState('request');

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { AlertCircle, Upload } from 'lucide-react';
+<<<<<<< HEAD:frontend/src/components/Education/EducationInfo.jsx
 import axios from 'axios';
 import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+=======
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
+>>>>>>> 067f90f7b0a13a1cc7a42cf9c70d89dc45d1328e:frontend/src/components/student/Education/EducationInfo.jsx
 
 const EducationalInfo = () => {
     const [resume, setResume] = useState(null);

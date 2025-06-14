@@ -75,7 +75,7 @@
     margin-bottom: 25px;
 }
 
-form {
+.contact form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -106,7 +106,7 @@ form {
     text-align: left;
 }
 
-input,
+.contact input,
 select,
 textarea {
     flex: 1;
@@ -124,7 +124,7 @@ textarea {
     resize: none;
 }
 
-form button {
+.contact form button {
     width: 250px;
     height: 54px;
     align-self: flex-start;
@@ -138,6 +138,6 @@ form button {
     transition: 0.3s ease;
 }
 
-form button:hover {
+.contact form button:hover {
     background-color: #dfe6ff;
 }

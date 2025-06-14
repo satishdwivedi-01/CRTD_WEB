@@ -5,6 +5,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectToDB from "./config/mongoose.config.js";
 import Userrouter from "./routes/user.routes.js";
+
+import JobRouter from "./routes/job.routes.js";
+import applicationRoutes from './routes/application.routes.js';
+
 import EducationRouter from "./routes/education.routes.js"
 import careerGuidenceRouter from "./routes/careerGuidence.routes.js"
 import passRouter from "./routes/updatePass.routes.js"
@@ -36,9 +40,14 @@ app.use(cors(corsOptions));
 
 // User Routes
 app.use("/users", Userrouter);
+
+app.use("/jobs", JobRouter);
+app.use('/applications', applicationRoutes);
+
 app.use("/education" , EducationRouter)
 app.use("/careerGuidence", careerGuidenceRouter)
 app.use("/password" , passRouter)
+
 
 
 app.listen(port, () => {

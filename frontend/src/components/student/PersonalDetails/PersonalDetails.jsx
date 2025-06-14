@@ -43,6 +43,9 @@ const PersonalDetails = () => {
     navigate("/editprofile");
   };
 
+  // Utility class for black border
+  const blackBorder = "border border-black";
+
   return (
     <div className="flex h-screen">
       <SideNavbar />
@@ -82,35 +85,38 @@ const PersonalDetails = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email ID
-                    </label>
-                    <div className="relative">
-                      <Mail className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
-                      <input
-                        type="email"
-                        name="emailId"
-                        value={formData.emailId}
-                        onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="john@gmail.com"
-                      />
-                    </div>
-                  </div>
+<div>
+  <label className="block text-sm font-medium text-gray-700 mb-2">
+    Email ID
+  </label>
+  <div className="relative">
+    <Mail className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
+  <input
+  type="email"
+  name="emailId"
+  value={formData.emailId}
+  onChange={handleInputChange}
+  className={`w-full ml-4 pl-12 pr-4 py-2.5 rounded-lg text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border border-black`}
+  placeholder="john@gmail.com"
+/>
+
+  </div>
+</div>
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Full Name
                     </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="John Francis D'Souza"
-                    />
+           <input
+  type="text"
+  name="fullName"
+  value={formData.fullName}
+  onChange={handleInputChange}
+  className={`w-full px-4 py-2.5 rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border border-black`}
+  placeholder="John Francis D'Souza"
+/>
+
+
                   </div>
 
                   <div>
@@ -124,7 +130,7 @@ const PersonalDetails = () => {
                         name="dateOfBirth"
                         value={formData.dateOfBirth}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        className={`w-full pl-10 pr-4 text-black placeholder-gray-500 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                         placeholder="01-03-2005"
                       />
                     </div>
@@ -139,7 +145,7 @@ const PersonalDetails = () => {
                       name="fatherName"
                       value={formData.fatherName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="Father's Name"
                     />
                   </div>
@@ -155,7 +161,7 @@ const PersonalDetails = () => {
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        className={`text-black placeholder-gray-500 w-full pl-10 pr-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                         placeholder="1234567890"
                       />
                     </div>
@@ -172,7 +178,7 @@ const PersonalDetails = () => {
                         name="whatsappNumber"
                         value={formData.whatsappNumber}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        className={`text-black placeholder-gray-500 w-full pl-10 pr-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                         placeholder="1234567890"
                       />
                     </div>
@@ -199,7 +205,7 @@ const PersonalDetails = () => {
                       name="birthplaceState"
                       value={formData.birthplaceState}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={` text-black placeholder-gray-500w-full px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="State"
                     />
                   </div>
@@ -213,7 +219,7 @@ const PersonalDetails = () => {
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="City"
                     />
                   </div>
@@ -227,7 +233,7 @@ const PersonalDetails = () => {
                       name="pinCode"
                       value={formData.pinCode}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="PIN Code"
                     />
                   </div>
@@ -242,7 +248,7 @@ const PersonalDetails = () => {
                     value={formData.permanentAddress}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                    className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none ${blackBorder}`}
                     placeholder="Enter your permanent address"
                   />
                 </div>
@@ -254,11 +260,11 @@ const PersonalDetails = () => {
                     name="sameAsPermament"
                     checked={formData.sameAsPermament}
                     onChange={handleInputChange}
-                    className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    className="w-4  h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                   />
                   <label
                     htmlFor="sameAsPermament"
-                    className="text-sm text-gray-700"
+                    className="text-sm  text-gray-700"
                   >
                     Check this box if your current address is the same as your
                     permanent address.
@@ -285,7 +291,7 @@ const PersonalDetails = () => {
                       name="currentState"
                       value={formData.currentState}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="State"
                     />
                   </div>
@@ -299,7 +305,7 @@ const PersonalDetails = () => {
                       name="currentCity"
                       value={formData.currentCity}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full text-black placeholder-gray-500 px-4 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="City"
                     />
                   </div>
@@ -313,7 +319,7 @@ const PersonalDetails = () => {
                       name="currentPinCode"
                       value={formData.currentPinCode}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className={`w-full px-4 text-black placeholder-gray-500 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${blackBorder}`}
                       placeholder="PIN Code"
                     />
                   </div>
@@ -328,7 +334,7 @@ const PersonalDetails = () => {
                     value={formData.currentAddress}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                    className={`w-full px-4 text-black placeholder-gray-500 py-2.5 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none ${blackBorder}`}
                     placeholder="Enter your current address"
                   />
                 </div>

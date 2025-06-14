@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { User, MapPin, Phone, Mail, Calendar, AlertCircle } from 'lucide-react';
 import SideNavbar from './SideNavbar';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const EditDetails = () => {
   const [formData, setFormData] = useState({
@@ -29,10 +31,26 @@ const EditDetails = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const userId =  "684bde21987ff378e90a2842";
+
+  try {
+    const response = await axios.put(`http://localhost:3000/users/profile/${userId}`, formData, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+toast.info('Profile updated successfully!');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error updating profile:', error.response?.data || error.message);
+   toast.info('Failed to update profile. Please try again.');
+  }
+};
+
 
   return (
 

@@ -13,28 +13,35 @@ import SignUpPage from './components/crtd Landing page/Login and SignUp/componen
 
 
 // import './App.css'
-import DashboardLayout from './components/student/dashboard/DashboardLayout'
-import Meeting from './components/student/dashboard/Meeting'
+import DashboardLayout from './components/student/Meet/DashboardLayout'
+import Meeting from './components/student/Meet/Meeting'
 
-import PersonalDetails from './components/PersonalDetails/PersonalDetails'
-import ConfirmPersonalDetails from './components/PersonalDetails/ConfirmPersonalDetails'
+import PersonalDetails from './components/student/PersonalDetails/PersonalDetails'
+import ConfirmPersonalDetails from './components/student/PersonalDetails/ConfirmPersonalDetails'
 
-import CareerGuidance from './components/Career-Guidance/CareerGuidance'
-import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
-import AccountSettings from './components/AccountSetting/AccountSetting'
-import EducationalInfo from './components/Education/EducationInfo'
+import CareerGuidance from './components/student/Career-Guidance/CareerGuidance'
+import RequestNewGuidance from './components/student/Career-Guidance/RequestNewGuidance'
+import AccountSettings from './components/student/AccountSetting/AccountSetting'
+import EducationalInfo from './components/student/Education/EducationInfo'
 
 
-import Job from './components/JobBoard/Job'
+import Job from './components/student/JobBoard/Job'
 
-import Popup from './components/JobBoard/Popup'
+import Popup from './components/student/JobBoard/Popup'
 
 import StudentHome from './components/student/student-dashboard/components/home/Home'
+import EditDetails from './components/student/PersonalDetails/EditDetails'
+import CreateJobForm from './components/admin/CreateJobForm'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
 
   return (
+
+        <>
+         <ToastContainer position="bottom-right" />
     <Routes>
 
 
@@ -51,8 +58,9 @@ function App() {
 
       {/* Student Pages */}
       <Route path="/personal-details" element={<PersonalDetails />} />
-      <Route path="/editprofile" element={<ConfirmPersonalDetails />} />
-
+      <Route path="/editprofile" element={<EditDetails />} />
+       <Route path="/confirmprofile" element={<ConfirmPersonalDetails />} />
+      
       <Route path="/careerguidance" element={<CareerGuidance />} />
       <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
 
@@ -64,6 +72,7 @@ function App() {
       <Route path="/Popup" element={<Popup />} />
 
       <Route path="/dashboard" element={<StudentHome />} />
+  <Route path="/CreateJobForm" element={<CreateJobForm />} />
 
       {/* Dashboard + pay-now */}
       <Route path="/dashboard/pay-now" element={<DashboardLayout />}>
@@ -72,10 +81,10 @@ function App() {
       </Route>
 
 
-
+   
     </Routes>
 
-
+</>
 
   )
 }
