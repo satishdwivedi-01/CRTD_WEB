@@ -1,19 +1,19 @@
 import React from 'react';
 
-import menu from "../../assets/menu.png";
-import person from "../../assets/person.png";
-import education from "../../assets/education.png";
-import job from "../../assets/job.png";
-import setting from "../../assets/setting.png";
-import carrier from "../../assets/carrier.png";
-import signout from "../../assets/signout.png";
-import Frontend from "../../assets/frontend.png";
-import Backend from "../../assets/backend.png";
-import Mobile from "../../assets/mobile.png";
-import fullstack from "../../assets/fullstack.png";
-import lock from "../../assets/lock.png";
+import menu from "../../../assets/menu.png";
+import person from "../../../assets/person.png";
+import education from "../../../assets/education.png";
+import job from "../../../assets/job.png";
+import setting from "../../../assets/setting.png";
+import carrier from "../../../assets/carrier.png";
+import signout from "../../../assets/signout.png";
+import Frontend from "../../../assets/frontend.png";
+import Backend from "../../../assets/backend.png";
+import Mobile from "../../../assets/mobile.png";
+import fullstack from "../../../assets/fullstack.png";
+import lock from "../../../assets/lock.png";
 
-import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
 
 
 

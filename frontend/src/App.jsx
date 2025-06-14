@@ -16,18 +16,18 @@ import SignUpPage from './components/crtd Landing page/Login and SignUp/componen
 import DashboardLayout from './components/student/dashboard/DashboardLayout'
 import Meeting from './components/student/dashboard/Meeting'
 
-import PersonalDetails from './components/PersonalDetails/PersonalDetails'
-import ConfirmPersonalDetails from './components/PersonalDetails/ConfirmPersonalDetails'
+import PersonalDetails from './components/student/PersonalDetails/PersonalDetails'
+import ConfirmPersonalDetails from './components/student/PersonalDetails/ConfirmPersonalDetails'
 
-import CareerGuidance from './components/Career-Guidance/CareerGuidance'
-import RequestNewGuidance from './components/Career-Guidance/RequestNewGuidance'
-import AccountSettings from './components/AccountSetting/AccountSetting'
-import EducationalInfo from './components/Education/EducationInfo'
+import CareerGuidance from './components/student/Career-Guidance/CareerGuidance'
+import RequestNewGuidance from './components/student/Career-Guidance/RequestNewGuidance'
+import AccountSettings from './components/student/AccountSetting/AccountSetting'
+import EducationalInfo from './components/student/Education/EducationInfo'
 
 
-import Job from './components/JobBoard/Job'
+import Job from './components/student/JobBoard/Job'
 
-import Popup from './components/JobBoard/Popup'
+import Popup from './components/student/JobBoard/Popup'
 
 import StudentHome from './components/student/student-dashboard/components/home/Home'
 

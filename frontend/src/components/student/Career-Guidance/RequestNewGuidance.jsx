@@ -3,7 +3,7 @@ import { Upload } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 import React, { useState } from 'react';
-import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
 
 
 const RequestNewGuidance = () => {

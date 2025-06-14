@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CareerGuidanceNavbar from '../../../../CareerGuidanceSidenavbar'
+import CareerGuidanceNavbar from '../../../../StudentSideNavBar'
 import ProfileStatus from './ProfileStatus'
 import '../../styles/HomeLayout.css' // We'll create this new CSS file
 

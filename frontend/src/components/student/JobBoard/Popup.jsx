@@ -1,6 +1,6 @@
 import React from "react";
-import frontend from "../../assets/frontend.png";
-import cross from "../../assets/cross.png";
+import frontend from "../../../assets/frontend.png";
+import cross from "../../../assets/cross.png";
 
 const Popup = () => {
   return (

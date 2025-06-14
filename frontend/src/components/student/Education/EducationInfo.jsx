@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AlertCircle, Upload } from 'lucide-react';
-import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
 
 const EducationalInfo = () => {
     const [resume, setResume] = useState(null);
