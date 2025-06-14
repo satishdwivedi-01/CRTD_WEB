@@ -102,6 +102,13 @@ export const updateProfile = async (req, res) => {
     const userId = req.params.id;
     const updates = req.body;
 
+    // Check if email or phone is being updated
+    if ('email' in updates || 'phone' in updates) {
+      return res.status(400).json({
+        message: "Email and phone number cannot be updated.",
+      });
+    }
+
     const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true });
 
     if (!updatedUser) {
@@ -116,4 +123,6 @@ export const updateProfile = async (req, res) => {
     res.status(500).json({ message: "Error updating profile", error: error.message });
   }
 };
+
+
 
