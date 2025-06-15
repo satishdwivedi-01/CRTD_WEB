@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { AlertCircle, Upload } from 'lucide-react';
-<<<<<<< HEAD:frontend/src/components/Education/EducationInfo.jsx
+
 import axios from 'axios';
 import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
-=======
-import CareerGuidanceNavbar from '../../StudentSideNavBar';
->>>>>>> 067f90f7b0a13a1cc7a42cf9c70d89dc45d1328e:frontend/src/components/student/Education/EducationInfo.jsx
+
 
 const EducationalInfo = () => {
     const [resume, setResume] = useState(null);
@@ -184,16 +182,17 @@ const EducationalInfo = () => {
                             />
                         </div>
 
-                        {/* Resume Upload */}
-                        <div className="space-y-2 md:col-span-2">
-                            <label className="block text-black font-medium">Upload Resume</label>
-                            <div
-                                className="border-2 flex items-center gap-2 border-black text-black bg-white rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
-                                onClick={() => setIsModalOpen(true)}
-                            >
-                                <Upload className="w-5 h-5 text-black" />
-                                <span className="text-black text-sm">{resume ? resume.name : "Choose File"}</span>
-                            </div>
+
+                    {/* Upload Resume (Trigger Box) */}
+                    <div className="space-y-2 md:col-span-2">
+                        <label htmlFor="resume-upload" className="block text-black font-medium">Upload Resume</label>
+                        <div
+                            className="border-2 flex items-center gap-2 text-black border-gray-300 rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
+                            onClick={() => setIsModalOpen(true)}
+                        >
+                            <Upload className="w-5 h-5 text-black" />
+                            <span className="text-black text-sm">{resume ? resume.name : "Choose File"}</span>
+
                         </div>
                     </div>
 
