@@ -26,8 +26,9 @@ const RequestNewGuidance = () => {
     formData.append('description', description);
     formData.append('preferredTime', preferredTime);
     if (file) {
-      formData.append('File', File);
+      formData.append('File', file); 
     }
+
 
     try {
       const response = await axios.post('http://localhost:3000/careerguidence/sumbit', formData, {
@@ -57,7 +58,7 @@ const RequestNewGuidance = () => {
     <div className="flex h-screen relative">
       <CareerGuidanceNavbar />
       <div className="flex-1 bg-gray-50 p-8">
-        
+
         {/* ✅ Top-right Success Toast */}
         {successMessage && (
           <div className="fixed top-5 right-5 z-50 transition-opacity duration-500 ease-in-out bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg shadow-lg flex items-center space-x-2 animate-fade-out">
@@ -78,11 +79,10 @@ const RequestNewGuidance = () => {
         <div className="mb-6">
           <div className="flex space-x-6 border-b border-gray-200">
             <button
-              className={`pb-2 px-1 cursor-pointer font-medium ${
-                activeTab === 'my-requests'
+              className={`pb-2 px-1 cursor-pointer font-medium ${activeTab === 'my-requests'
                   ? 'text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-500 hover:text-gray-700'
-              }`}
+                }`}
               onClick={() => {
                 setActiveTab('my-requests');
                 navigate('/careerGuidance');
@@ -92,11 +92,10 @@ const RequestNewGuidance = () => {
             </button>
 
             <button
-              className={`pb-2 px-1 cursor-pointer font-medium ${
-                activeTab === 'request'
+              className={`pb-2 px-1 cursor-pointer font-medium ${activeTab === 'request'
                   ? 'text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-500 hover:text-gray-700'
-              }`}
+                }`}
               onClick={() => {
                 setActiveTab('request');
                 navigate('/requestnewguidance');
