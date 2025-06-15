@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AlertCircle, Upload } from 'lucide-react';
 
 import axios from 'axios';
-import CareerGuidanceNavbar from '../CareerGuidanceSidenavbar';
+import CareerGuidanceNavbar from '../../StudentSideNavBar';
 
 
 const EducationalInfo = () => {
@@ -87,7 +87,7 @@ const EducationalInfo = () => {
                         <span className="font-medium">{successMessage}</span>
                     </div>
                 )}
-                
+
 
                 {/* Alert */}
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
@@ -183,27 +183,28 @@ const EducationalInfo = () => {
                         </div>
 
 
-                    {/* Upload Resume (Trigger Box) */}
-                    <div className="space-y-2 md:col-span-2">
-                        <label htmlFor="resume-upload" className="block text-black font-medium">Upload Resume</label>
-                        <div
-                            className="border-2 flex items-center gap-2 text-black border-gray-300 rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
-                            onClick={() => setIsModalOpen(true)}
-                        >
-                            <Upload className="w-5 h-5 text-black" />
-                            <span className="text-black text-sm">{resume ? resume.name : "Choose File"}</span>
+                        {/* Upload Resume (Trigger Box) */}
+                        <div className="space-y-2 md:col-span-2">
+                            <label htmlFor="resume-upload" className="block text-black font-medium">Upload Resume</label>
+                            <div
+                                className="border-2 flex items-center gap-2 text-black border-gray-300 rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
+                                onClick={() => setIsModalOpen(true)}
+                            >
+                                <Upload className="w-5 h-5 text-black" />
+                                <span className="text-black text-sm">{resume ? resume.name : "Choose File"}</span>
 
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Submit Button */}
-                    <div className="gap-4 mt-8">
-                        <button
-                            type="submit"
-                            className="flex-1 bg-blue-600 ml-[110vh] font-semibold text-white rounded px-4 py-3 hover:bg-blue-700 transition"
-                        >
-                            Confirm your Details
-                        </button>
+                        {/* Submit Button */}
+                        <div className="gap-4 mt-8">
+                            <button
+                                type="submit"
+                                className="flex-1 bg-blue-600 ml-[110vh] font-semibold text-white rounded px-4 py-3 hover:bg-blue-700 transition"
+                            >
+                                Confirm your Details
+                            </button>
+                        </div>
                     </div>
                 </form>
 
