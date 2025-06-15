@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   status: { type: String, enum: ["active", "inActive"], default: "inActive" },
 
-  fullName: String,
+
   dob: String,
   fathersName: String,
   whatsapp: String,

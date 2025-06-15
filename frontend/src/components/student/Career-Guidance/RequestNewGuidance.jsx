@@ -1,7 +1,7 @@
 import { Upload } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CareerGuidanceNavbar from '../../StudentSideNavBar';
 import axios from 'axios';
 

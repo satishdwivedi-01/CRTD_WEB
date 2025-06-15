@@ -4,11 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const registerUser = async (req, res) => {
   try {
-    const { username, email, phone, password, confirmPassword } = req.body;
-
-    if (password !== confirmPassword) {
-      return res.status(400).json({ message: "Passwords do not match" });
-    }
+    const { username, email, phone, password } = req.body;
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -23,7 +19,7 @@ export const registerUser = async (req, res) => {
       phone,
       password: hashedPassword,
     });
-
+    console.log(newUser)
     await newUser.save();
     res.status(201).json({ message: "User registered successfully" });
   } catch (error) {
