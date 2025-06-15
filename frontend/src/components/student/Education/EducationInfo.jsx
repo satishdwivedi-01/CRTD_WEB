@@ -91,7 +91,7 @@ const EducationalInfo = () => {
                     <div className="space-y-2 md:col-span-2">
                         <label htmlFor="resume-upload" className="block text-black font-medium">Upload Resume</label>
                         <div
-                            className="border-2 flex items-center gap-2 border text-black border-gray-300 rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
+                            className="border-2 flex items-center gap-2 text-black border-gray-300 rounded-lg px-4 py-2 max-w-md w-[22vh] cursor-pointer"
                             onClick={() => setIsModalOpen(true)}
                         >
                             <Upload className="w-5 h-5 text-black" />
