@@ -4,7 +4,9 @@ import cors from "cors";
 
 import dotenv from "dotenv";
 import connectToDB from "./config/mongoose.config.js";
+
 import Userrouter from "./routes/user.routes.js";
+import authRouter from "./routes/auth.routes.js";
 
 import JobRouter from "./routes/job.routes.js";
 import applicationRoutes from './routes/application.routes.js';
@@ -40,6 +42,7 @@ app.use(cors(corsOptions));
 
 // User Routes
 app.use("/users", Userrouter);
+app.use('/auth', authRouter);
 
 app.use("/jobs", JobRouter);
 app.use('/applications', applicationRoutes);

@@ -5,7 +5,7 @@ import auth from "../middlewares/JwtAuth.js";
 const passRouter = express.Router();
 
 
-passRouter.put("/update",auth ,updatePassController);
+passRouter.put("/update",updatePassController);
 
 
 export default passRouter;

@@ -1,5 +1,8 @@
 
+
 import { Routes, Route, Link } from 'react-router-dom'
+
+import ProtectedRoute from './components/ProtectedRoute';
 
 
 import Home from './components/crtd Landing page/home/Home'
@@ -38,53 +41,141 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
+
+
   return (
 
-        <>
-         <ToastContainer position="bottom-right" />
-    <Routes>
+    <>
+      <ToastContainer position="bottom-right" />
+      <Routes>
 
 
-      {/* Landing Pages */}
+        {/* Landing Pages */}
 
-      <Route path="/" element={< Home />} />
-      <Route path="/fresherJobs" element={<FresherJobs />} />
-      <Route path="/contact-us" element={<AllContactUs />} />
-      <Route path="/pricing" element={<PricingTab />} />
-      <Route path="/services" element={<ServicesTab />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/signup" element={<SignUpPage />} />
-
-
-      {/* Student Pages */}
-      <Route path="/personal-details" element={<PersonalDetails />} />
-      <Route path="/editprofile" element={<EditDetails />} />
-       <Route path="/confirmprofile" element={<ConfirmPersonalDetails />} />
-      
-      <Route path="/careerguidance" element={<CareerGuidance />} />
-      <Route path="/requestnewguidance" element={<RequestNewGuidance />} />
-
-      <Route path="/educational-info" element={<EducationalInfo />} />
-
-      <Route path="/accountsetting" element={<AccountSettings />} />
-
-      <Route path="/job-board" element={<Job />} />
-      <Route path="/Popup" element={<Popup />} />
-
-      <Route path="/dashboard" element={<StudentHome />} />
-  <Route path="/CreateJobForm" element={<CreateJobForm />} />
-
-      {/* Dashboard + pay-now */}
-      <Route path="/dashboard/pay-now" element={<DashboardLayout />}>
-        <Route path="/dashboard/pay-now" element={<Meeting />} />
-        {/* Add more nested routes here if needed */}
-      </Route>
+        <Route path="/" element={< Home />} />
+        <Route path="/fresherJobs" element={<FresherJobs />} />
+        <Route path="/contact-us" element={<AllContactUs />} />
+        <Route path="/pricing" element={<PricingTab />} />
+        <Route path="/services" element={<ServicesTab />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
 
 
-   
-    </Routes>
+        {/* Student Pages */}
+        <Route
+          path="/personal-details"
+          element={
+            <ProtectedRoute>
+              {(userData) => <PersonalDetails userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
 
-</>
+        <Route
+          path="/editprofile"
+          element={
+            <ProtectedRoute>
+              {(userData) => <EditDetails userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/confirmprofile"
+          element={
+            <ProtectedRoute>
+              {(userData) => <ConfirmPersonalDetails userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/careerguidance"
+          element={
+            <ProtectedRoute>
+              {(userData) => <CareerGuidance userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/requestnewguidance"
+          element={
+            <ProtectedRoute>
+              {(userData) => <RequestNewGuidance userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/educational-info"
+          element={
+            <ProtectedRoute>
+              {(userData) => <EducationalInfo userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/accountsetting"
+          element={
+            <ProtectedRoute>
+              {(userData) => <AccountSettings userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/job-board"
+          element={
+            <ProtectedRoute>
+              {(userData) => <Job userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/Popup"
+          element={
+            <ProtectedRoute>
+              {(userData) => <Popup userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              {(userData) => <StudentHome userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/CreateJobForm"
+          element={
+            <ProtectedRoute>
+              {(userData) => <CreateJobForm userData={userData} />}
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Dashboard + pay-now */}
+        <Route
+          path="/dashboard/pay-now"
+          element={
+            <ProtectedRoute>
+              {(userData) => (
+                <DashboardLayout userData={userData}>
+                  <Meeting userData={userData} />
+                </DashboardLayout>
+              )}
+            </ProtectedRoute>
+          }
+        />
+
+
+      </Routes>
+
+    </>
 
   )
 }

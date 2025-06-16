@@ -1,5 +1,6 @@
 import express from 'express';
 import { applyForJob, getApplications } from '../controllers/application.controller.js';
+import auth from "../middlewares/JwtAuth.js";
 
 const router = express.Router();
 

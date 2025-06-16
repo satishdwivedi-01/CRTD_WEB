@@ -1,6 +1,7 @@
 import express from 'express';
 import upload from '../middlewares/upload.js';
 import  {careerGuidenceController} from "../controllers/careerGuidence.controller.js"
+import auth from "../middlewares/JwtAuth.js";
 
 
 
