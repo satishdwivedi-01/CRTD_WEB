@@ -1,10 +1,11 @@
 import express from "express";
 import {updatePassController} from "../controllers/updatePass.controller.js"
+import auth from "../middlewares/JwtAuth.js";
 
-const updaterouter = express.Router();
-
-
-updaterouter.post("/update", updatePassController);
+const passRouter = express.Router();
 
 
-export default updaterouter;
+passRouter.put("/update",auth ,updatePassController);
+
+
+export default passRouter;

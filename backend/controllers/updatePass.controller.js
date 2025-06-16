@@ -1,14 +1,14 @@
 import bcrypt from 'bcryptjs';
-import User from '../models/updatePass.model.js'; 
+import User from '../models/user.model.js';
 
 export const updatePassController = async (req, res) => {
   try {
-    console.log(req.userId)
-    console.log(req.body)
-    const { userId } = req.user; 
+    const { id } = req.user; 
     const { currentPassword, newPassword, confirmPassword } = req.body;
-
-    const user = await User.findById(userId);
+    console.log(id)
+    console.log(req.body)
+ 
+    const user = await User.findById(id);
     if (!user) return res.status(404).json({ message: 'User not found' });
 
     const isMatch = await bcrypt.compare(currentPassword, user.password);

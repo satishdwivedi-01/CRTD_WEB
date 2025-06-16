@@ -19,7 +19,7 @@ const AccountSettings = () => {
   const handleUpdatePassword = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:3000/password/sumbit",
+        "http://localhost:3000/password/update",
         {
           currentPassword,
           newPassword,
@@ -28,8 +28,8 @@ const AccountSettings = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
+          withCredentials: true, // 👈 this sends cookies
         }
       );
 
