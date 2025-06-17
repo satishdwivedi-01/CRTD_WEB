@@ -73,7 +73,7 @@ const Footer = () => {
           <p className={styles.crtdFooter__newsletterText}>
             Subscribe to our newsletter for the latest job opportunities and career tips.
           </p>
-          <form className={styles.crtdFooter__newsletterForm}>
+          <form className={styles.crtdFooter__newsletterForm} style={{ display: 'flex', flexDirection: 'column' }}>
             <input
               type="email"
               placeholder="Enter your email"
@@ -83,6 +83,7 @@ const Footer = () => {
             <button
               type="submit"
               className={styles.crtdFooter__newsletterButton}
+              style={{ marginTop: '10px' }}
             >
               Subscribe →
             </button>

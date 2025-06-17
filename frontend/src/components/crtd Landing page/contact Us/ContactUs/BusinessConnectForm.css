@@ -141,3 +141,101 @@ form button {
 form button:hover {
     background-color: #dfe6ff;
 }
+
+/* Add these media queries at the end of your existing CSS */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1200px) {
+    .form-container {
+        width: 95%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .form-row.full-width,
+    .input-group textarea {
+        width: 100%;
+    }
+
+    .contact-icons {
+        gap: 100px;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .top-info h2 {
+        font-size: 30px;
+    }
+
+    .top-info p {
+        font-size: 16px;
+    }
+
+    .contact-icons {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h3 {
+        font-size: 28px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .top-info h2 {
+        font-size: 26px;
+    }
+
+    .top-info p {
+        font-size: 14px;
+    }
+
+    .contact-icons {
+        gap: 30px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle img {
+        padding: 15px;
+    }
+
+    .form-container h3 {
+        font-size: 24px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px 12px;
+    }
+
+    .business-connect-section {
+        padding: 30px 15px;
+    }
+}

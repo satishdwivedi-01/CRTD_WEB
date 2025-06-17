@@ -69,8 +69,8 @@ function App() {
       <Route path="/dashboard/pay-now" element={<DashboardLayout />}>
         <Route path="/dashboard/pay-now" element={<Meeting />} />
         {/* Add more nested routes here if needed */}
-      </Route>
 
+      </Route>
 
 
     </Routes>
